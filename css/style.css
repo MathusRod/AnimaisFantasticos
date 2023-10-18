@@ -196,7 +196,7 @@ footer p {
     max-height: 0;
   }
   to {
-    max-height: 800px;
+    max-height: 1500px;
     opacity: 1;
   }
 }
@@ -275,6 +275,10 @@ footer p {
     align-items: center;
     justify-content: center;
   }
+  nav li{
+    flex-wrap: wrap;
+  }
+
   .titulo {
     font-size: 2.5rem;
     text-align: center;
@@ -305,5 +309,97 @@ footer p {
   }
   .contato ul {
     padding: 85px 0;
+  }
+}
+
+
+@media (max-width:620px){
+  .container,
+  .animais,
+  .faq,
+  .contato {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .titulo{
+    font-size: 1.5rem;
+    padding: 10px 0;
+  }
+  .animais-lista{
+    width: 300px;
+  }
+  .animais-descricao{
+    width: 500px;
+  }
+  .animais-descricao p{
+    font-size: 1rem;
+  }
+  .faq dt{
+    width: 400px;
+    white-space:normal;
+  }
+  .faq dd{
+    width: 350px;
+  }
+  .contato img {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+  }
+  .contato div{
+    display: flex;
+    flex-direction: column;
+  }
+  .contato li {
+    font-size: 1rem;
+  }
+  .contato ul {
+    padding: 10px 0;
+    margin: 0 auto;
+  }
+}
+@media (max-width:500px){
+  .container,
+  .animais,
+  .faq,
+  .contato {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .titulo{
+    font-size: 1.5rem;
+    padding: 10px 0;
+  }
+  .animais-lista{
+    width: 300px;
+  }
+  .animais-descricao{
+    width: 400px;
+  }
+  .animais-descricao p{
+    font-size: 1rem;
+  }
+  .faq dt{
+    width: 300px;
+    white-space:normal;
+  }
+  .faq dd{
+    width: 250px;
+  }
+  .contato img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .contato div{
+    display: flex;
+    flex-direction: column;
+  }
+  .contato li {
+    font-size: 0.875rem;
+  }
+  .contato ul {
+    padding: 10px 0;
+    margin: 0 auto;
   }
 }
