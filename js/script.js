@@ -5,6 +5,7 @@ import initAnimaScroll from "./modules/scroll-animacao.js";
 import atualizarWidth from "./modules/atualizar-tela.js";
 import initModal from "./modules/modal.js";
 import initTooltip from "./modules/tooltip.js"
+import initDropdownMenu from "./modules/dropdown-menu.js";
 initTabNav();
 initAccordion();
 initScrollSuave();
@@ -12,3 +13,4 @@ initAnimaScroll();
 atualizarWidth();
 initModal();
 initTooltip();
+initDropdownMenu();

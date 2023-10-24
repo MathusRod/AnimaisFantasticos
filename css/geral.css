@@ -1,9 +1,8 @@
 :root {
-  --background: #fb5;
+  --background: #f1a661;
   --textprimary: #222;
-  --textsecundary: #e54;
-  --fundo: #dbdad8;
-  --fundo2: rgba(207, 202, 202, 0.836);
+  --textsecundary: #e38b29;
+  --fundo2: #fdeedc;
 }
 * {
   margin: 0;
@@ -31,6 +30,9 @@ nav {
   margin: 20px;
   padding: 10px;
 }
+.menu li {
+  padding: 6px;
+}
 .menu a {
   text-decoration: none;
   color: var(--textprimary);
@@ -38,7 +40,7 @@ nav {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
 }
 .menu a:hover {
   color: var(--textsecundary);
@@ -108,7 +110,7 @@ nav {
   width: 20px;
   height: 10px;
   display: inline-block;
-  background: var(--background);
+  background: var(--textsecundary);
   position: absolute;
   top: 4px;
   left: -30px;
@@ -159,12 +161,12 @@ footer p {
   text-align: center;
   font-size: 1.25rem;
 }
-footer a{
+footer a {
   text-decoration: none;
   color: var(--textprimary);
 }
-footer a:hover{
-  color:var(--textsecundary);
+footer a:hover {
+  color: var(--textsecundary);
   font-weight: bold;
 }
 .js .js-tabcontent section {
@@ -235,7 +237,7 @@ footer a:hover{
   .container,
   .animais,
   .faq,
-  .contato{
+  .contato {
     width: 800px;
   }
   .animais-lista {
@@ -370,6 +372,9 @@ footer a:hover{
   .contato {
     width: 400px;
     margin: 0 auto;
+  }
+  nav ul {
+    flex-wrap: wrap;
   }
   .titulo {
     font-size: 1.5rem;
