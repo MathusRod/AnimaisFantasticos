@@ -12,9 +12,10 @@
 <body>
   <div class="grid-container">
     <nav class="larguraJanela">
-      <ul class="menu js-menu">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul data-menu="list" class="menu js-menu" id="menu">
         <li><a href="#animais">Animais</a></li>
-        <li data-dropdown><a href="sobre.html">Sobre</a>
+        <li data-dropdown class="about"><a href="sobre.html">Sobre</a>
           <ul class="dropdown-menu">
             <li><a href="empresa.html">A Empresa</a></li>
             <li><a href="equipe.html">Equipe</a></li>
