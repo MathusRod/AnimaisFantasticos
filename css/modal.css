@@ -16,9 +16,9 @@
 }
 
 .modal {
-  background: white;
+  background: var(--background);
   padding: 40px;
-  border: 10px solid var(--background);
+  border: 10px solid var(--mainColor);
   /* box-shadow: 0 0 0 10px white; */
   position: relative;
   min-width: 300px;
@@ -46,7 +46,7 @@
   top: -30px;
   right: -30px;
   position: absolute;
-  background: var(--textsecundary);
+  background: var(--secundaryText);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
   font-size: 1.2rem;
   color: white;
@@ -70,7 +70,7 @@
 
 .modal button[type="submit"] {
   display: block;
-  background: var(--textsecundary);
+  background: var(--secundaryText);
   border: none;
   border-radius: 4px;
   padding: 0.7rem 2rem;
@@ -95,6 +95,7 @@
   }
 }
 
-input{
+input {
   outline: none;
+  background: var(--background);
 }
