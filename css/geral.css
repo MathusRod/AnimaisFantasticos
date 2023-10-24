@@ -70,6 +70,7 @@ nav {
   width: 56.25rem;
   height: 18.75rem;
   margin: 1rem 3.125rem;
+  list-style: none;
 }
 .animais-lista img {
   width: 18.75rem;
