@@ -1,0 +1,16 @@
+.numeros-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 80px;
+  margin-bottom: 1rem;
+  grid-gap: 30px;
+}
+.numeros-grid h3{
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+.numeros-grid span{
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--secundaryText);
+}

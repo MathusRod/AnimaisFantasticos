@@ -23,17 +23,16 @@
     margin-right: 4px;
     content: "";
     display: inline-block;
-    height: 2px;
-    width: 12px;
+    height: 3px;
+    width: 15px;
     background: #fff;
-    box-shadow: 0 4px #fff, 0 -4px #fff;
+    box-shadow: 0 6px #fff, 0 -6px #fff;
     transition: transform .3s;
   }
   .js [data-menu="button"].active::before{
     transform: rotate(90deg);
   }
   .js [data-menu="list"]{
-    flex-direction: column;
     display: none;
     position: absolute;
     background: var(--mainColor);
