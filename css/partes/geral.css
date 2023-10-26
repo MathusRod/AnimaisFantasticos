@@ -3,6 +3,7 @@
   --primaryText: #222;
   --secundaryText: #e38b29;
   --background: #fdeedc;
+  --links: #445D48;
 }
 * {
   margin: 0;
@@ -43,7 +44,7 @@ nav {
   /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
 }
 .menu a:hover {
-  color: var(--secundaryText);
+  color: var(--links);
 }
 .titulo {
   font-size: 6rem;
@@ -97,6 +98,7 @@ nav {
   margin: 10px 80px;
 }
 .faq dt {
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   position: relative;
   cursor: pointer;
@@ -114,7 +116,8 @@ nav {
   left: -30px;
 }
 .faq dt:hover {
-  color: var(--secundaryText);
+  color: var(--links);
+  font-weight: 700;
 }
 .faq dd {
   margin: 0 1rem;
@@ -148,6 +151,12 @@ nav {
 .contato strong {
   color: var(--secundaryText);
 }
+[data-week] strong{
+  color: #ff0000;
+}
+[data-week].open strong{
+  color: rgb(38, 196, 51);
+}
 footer {
   grid-column: 1/4;
   background: var(--mainColor);
@@ -164,7 +173,7 @@ footer a {
   color: var(--primaryText);
 }
 footer a:hover {
-  color: var(--secundaryText);
+  color: var(--links);
   font-weight: bold;
 }
 .js .js-tabcontent section {
@@ -306,6 +315,9 @@ footer a:hover {
   .faq dd {
     width: 500px;
   }
+  .contato div{
+    gap: 26px;
+  }
   .contato img {
     width: 300px;
     height: 300px;
@@ -315,6 +327,7 @@ footer a:hover {
   }
   .contato ul {
     padding: 85px 0;
+    width: 300px;
   }
 }
 

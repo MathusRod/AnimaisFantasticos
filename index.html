@@ -114,10 +114,6 @@
         <h1 class="titulo">Números</h1>
         <div class="numeros-grid">
           <div class="numero-animal">
-            <h3>Lobos</h3>
-            <span data-numeros>4876</span>
-          </div>
-          <div class="numero-animal">
             <h3>Raposas</h3>
             <span data-numeros>5374</span>
           </div>
@@ -128,6 +124,18 @@
           <div class="numero-animal">
             <h3>Ursos</h3>
             <span data-numeros>230</span>
+          </div>
+          <div class="numero-animal">
+            <h3>Lobos</h3>
+            <span data-numeros>4876</span>
+          </div>
+          <div class="numero-animal">
+            <h3>Macaco</h3>
+            <span data-numeros>8576</span>
+          </div>
+          <div class="numero-animal">
+            <h3>Leão</h3>
+            <span data-numeros>2094</span>
           </div>
         </div>
       </section>
@@ -140,6 +148,7 @@
             <li><strong>➤</strong> 85 99999-9999</li>
             <li><strong>➤</strong> Granja Portugal</li>
             <li><strong>➤</strong> Fortaleza, CE</li>
+            <li data-week="1,2,3,4,5" data-hour="7,17"><strong class="icon">✔</strong> Segunda á Sexta das 7h às 17h.</li>
           </ul>
         </div>
       </section>
@@ -151,11 +160,13 @@
   <section class="modal-container" data-modal="container">
     <div class="modal">
       <button data-modal="Fechar" class="fechar">X</button>
-      <form action="">
+      <form action="" id="validation">
         <label for="email">Email</label>
-        <input type="text" for="email" id="email" placeholder="exemplo@email" required>
+        <input type="text" name="email" for="email" id="email" placeholder="exemplo@email" required>
+        <span class="erro"></span>
         <label for="senha">Senha</label>
-        <input type="password" for="senha" id="senha" placeholder="senha1234" required>
+        <input type="password" name="senha" for="senha" id="senha" placeholder="senha1234" required>
+        <span></span>
         <button type="submit">Entrar</button>
       </form>
     </div>

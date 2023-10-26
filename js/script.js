@@ -1,13 +1,14 @@
-import initTabNav from "./modules/tabnav.js"
+import initTabNav from "./modules/tabnav.js";
 import initAccordion from "./modules/accordion.js";
 import initScrollSuave from "./modules/scroll-suave.js";
 import initAnimaScroll from "./modules/scroll-animacao.js";
 import atualizarWidth from "./modules/atualizar-tela.js";
 import initModal from "./modules/modal.js";
-import initTooltip from "./modules/tooltip.js"
+import initTooltip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initAnimaNumeros from "./modules/anima-numeros.js";
+import initFuncionamento from "./modules/funcionamento.js";
 initTabNav();
 initAccordion();
 initScrollSuave();
@@ -16,5 +17,7 @@ atualizarWidth();
 initModal();
 initTooltip();
 initDropdownMenu();
-initMenuMobile()
-initAnimaNumeros()
+initMenuMobile();
+initAnimaNumeros();
+initFuncionamento();
+

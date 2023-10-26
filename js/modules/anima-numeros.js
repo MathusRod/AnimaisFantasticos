@@ -1,5 +1,5 @@
 export default function initAnimaNumeros() {
-  const numeros = document.querySelectorAll("[data-numeros]");
+const numeros = document.querySelectorAll("[data-numeros]");
 function animaNumeros() {
   numeros.forEach((numero) => {
     const total = +numero.innerText;

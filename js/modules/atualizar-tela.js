@@ -5,6 +5,8 @@ export default function atualizarWidth() {
     const scrollDirection = event.deltaY > 0 ? 1 : -1;
     scrollContainer.scrollLeft += scrollDirection * 300;
   });
+
+  
   window.addEventListener("load", function () {
     const larguraJanela = document.querySelector(".larguraJanela");
     const larguraRodape = document.querySelector(".rodape");
