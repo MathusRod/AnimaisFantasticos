@@ -2,13 +2,22 @@ export default function initTabNav() {
   async function fecthAnimaisDescription(url) {
     const tabmenu = document.querySelectorAll(".js-tabmenu li");
     const animaisDescricao = document.querySelector(".animais-descricao");
+
     if (tabmenu.length && animaisDescricao) {
       const animaisReponse = await fetch(url);
       const animaisJSON = await animaisReponse.json();
+      (() => {
+        const index = 0;
+        animaisDescricao.appendChild(
+          createAnimalDescription(animaisJSON, index)
+        );
+      })();
       tabmenu.forEach((itemMenu, index) => {
         itemMenu.addEventListener("click", () => {
           animaisDescricao.innerHTML = "";
-          animaisDescricao.appendChild(createAnimalDescription(animaisJSON, index));
+          animaisDescricao.appendChild(
+            createAnimalDescription(animaisJSON, index)
+          );
         });
       });
     }
