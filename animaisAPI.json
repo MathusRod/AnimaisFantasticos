@@ -1,0 +1,38 @@
+[
+  {
+    "specie": "Raposas",
+    "total": 5374,
+    "description1":  "As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.",
+    "description2": "Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos. De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das 'raposas verdadeiras', do qual a raposa vermelha é a mais comum."
+  },
+  {
+    "specie": "Esquilos",
+    "total": 12340,
+    "description1":  "Os esquilos pertencem a uma grande família de mamíferos roedores, de pequeno e médio porte, conhecida como Sciuridae. Os esquilos estão espalhados por quase todo o mundo, a maioria nas zonas de climas temperado ou tropical, mas também em algumas zonas de clima frio.",
+    "description2": "Como todos os roedores, possui presas fortíssimas, com que roem facilmente sementes, principalmente bolotas."
+  },
+  {
+    "specie": "Ursos",
+    "total": 230,
+    "description1":  "Os Ursos constituem uma família de mamíferos plantígrados, da ordem Carnivora, geralmente de grande porte, contendo os ursos e os pandas. ",
+    "description2": "Algumas características comuns dos ursos são pelagem espessa, rabo curto, o olfato desenvolvido e as garras não retráteis. Os ursídeos são geralmente animais omnívoros, mas se alimentam principalmente de carne."
+  },
+  {
+    "specie": "Lobos",
+    "total": 4874,
+    "description1":  "O lobo é uma espécie de mamífero canídeo do gênero Canis. É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás. É o maior membro remanescente selvagem da família canidae.",
+    "description2": "O sequenciamento de DNA e estudos genéticos reafirmam que o lobo-cinzento é ancestral do cão doméstico (Canis lupus familiaris), contudo alguns aspectos desta afirmação têm sido questionados recentemente."
+  },
+  {
+    "specie": "Macacos",
+    "total": 8576,
+    "description1":  "Macaco é um termo de origem africana utilizado como designação comum a todas as espécies de símios ou primatas antropoides. É aplicada restritivamente no Brasil aos cebídeos (ou macacos do Novo Mundo) em geral.",
+    "description2": "Sentido estrito, 'macaco' refere-se às espécies de primatas pertencentes ao género Macaca. A designação mico se origina, segundo o Dicionário Aurélio, do caraíba (karib) continental. É bastante usada no Brasil, onde costuma aplicar-se às espécies do gênero Cebus, no Sul, e às espécies de pequeno porte, ou saguis, no Norte."
+  },
+  {
+    "specie": "Leões",
+    "total": 2094,
+    "description1":  "O leão é uma espécie de mamífero carnívoro do gênero Panthera e da família Felidae. A pelagem é unicolor de coloração castanha, e os machos apresentam uma juba característica. Uma das características mais marcantes da espécie é a presença de um tufo de pelos pretos na cauda, que também possui uma espora.",
+    "description2": "Habita preferencialmente as savanas e pastagens abertas, mas pode ser encontrado em regiões mais arbustivas."
+  }
+]

@@ -3,7 +3,7 @@
   --primaryText: #222;
   --secundaryText: #e38b29;
   --background: #fdeedc;
-  --links: #445D48;
+  --links: #445d48;
 }
 * {
   margin: 0;
@@ -141,20 +141,26 @@ nav {
   height: 400px;
 }
 .contato ul {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .contato li {
   font-size: 1.5rem;
   list-style: none;
   margin-bottom: 1.5rem;
 }
+.btc-preco {
+  background: var(--mainColor);
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-size: bold;
+}
 .contato strong {
   color: var(--secundaryText);
 }
-[data-week] strong{
+[data-week] strong {
   color: #ff0000;
 }
-[data-week].open strong{
+[data-week].open strong {
   color: rgb(38, 196, 51);
 }
 footer {
@@ -177,12 +183,10 @@ footer a:hover {
   font-weight: bold;
 }
 .js .js-tabcontent section {
-  display: none;
-}
-.js-tabcontent section.ativo {
-  display: block !important;
+  display: block;
   animation: show 0.5s forwards;
 }
+
 @keyframes show {
   from {
     opacity: 0;
@@ -274,7 +278,7 @@ footer a:hover {
     font-size: 1.25rem;
   }
   .contato ul {
-    padding: 85px 0;
+    padding: 20px 0;
   }
 }
 @media (max-width: 900px) {
@@ -315,7 +319,7 @@ footer a:hover {
   .faq dd {
     width: 500px;
   }
-  .contato div{
+  .contato div {
     gap: 26px;
   }
   .contato img {
@@ -326,7 +330,7 @@ footer a:hover {
     font-size: 0.875rem;
   }
   .contato ul {
-    padding: 85px 0;
+    padding: 40px 0;
     width: 300px;
   }
 }

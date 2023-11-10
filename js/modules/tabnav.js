@@ -1,21 +1,22 @@
 export default function initTabNav() {
-  const tabmenu = document.querySelectorAll(".js-tabmenu li");
-  const tabcontent = document.querySelectorAll(".js-tabcontent section");
-
-  if (tabmenu.length && tabcontent.length) {
-    tabcontent[0].classList.add("ativo");
-
-    function activetab(index) {
-      tabcontent.forEach((section) => {
-        section.classList.remove("ativo");
+  async function fecthAnimaisDescription(url) {
+    const tabmenu = document.querySelectorAll(".js-tabmenu li");
+    const animaisDescricao = document.querySelector(".animais-descricao");
+    if (tabmenu.length && animaisDescricao) {
+      const animaisReponse = await fetch(url);
+      const animaisJSON = await animaisReponse.json();
+      tabmenu.forEach((itemMenu, index) => {
+        itemMenu.addEventListener("click", () => {
+          animaisDescricao.innerHTML = "";
+          animaisDescricao.appendChild(createAnimalDescription(animaisJSON, index));
+        });
       });
-      tabcontent[index].classList.add("ativo");
     }
-
-    tabmenu.forEach((itemMenu, index) => {
-      itemMenu.addEventListener("click", () => {
-        activetab(index);
-      });
-    });
   }
+  function createAnimalDescription(animaisJSON, index) {
+    const section = document.createElement("section");
+    section.innerHTML = `<h2>${animaisJSON[index].specie}</h2><p>${animaisJSON[index].description1}</p><p>${animaisJSON[index].description2}</p>`;
+    return section;
+  }
+  fecthAnimaisDescription("./animaisAPI.json");
 }
